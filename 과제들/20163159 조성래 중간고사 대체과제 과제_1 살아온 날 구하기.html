@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>과제_1 태어난 날 계산</title>
+<link rel="stylesheet" href="과제.css" type="text/css">
+
+<script src="과제.js">
+</script>
+</head>
+<body>
+    <div>
+    <p class ="dotum">태어난지</p>
+    <h1 id="h">
+        <script>
+        document.write((life+1) + '일');
+        </script>
+    </h1>
+
+    <h2>
+    <p>100일후<span id="b"></span></p>
+    <hr>
+    <p id="a">
+        <script>
+            document.write(life+1+'일후')
+        </script>
+        <span id="c"></span></p>
+    </h2>
+
+    </div>
+    <script>
+        
+        document.querySelector('#b').innerText=(' 19'+after3.getYear()+'년 '+
+            after3.getMonth()+1+'월 '+after3.getDate()+'일');
+
+        document.querySelector('#c').innerText=(now.getFullYear()+'년 '+
+            (now.getMonth()+1)+'월 '+now.getDate()+'일');
+    </script> 
+</body>
+</html>

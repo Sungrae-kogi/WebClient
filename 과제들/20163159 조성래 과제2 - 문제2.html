@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 2</title>
+<style>
+    h3 {
+        font-size: 2em;
+    }
+
+</style>
+</head>
+<body>
+    <h3>피자 주문</h3>
+    <div id="container">
+        <form name="size">
+            <fieldset>
+                <legend>사이즈</legend>
+                <a>Large - 24000원</a>
+            </fieldset>
+        </form>
+        <form name="addorder">
+            <fieldset>
+                <legend>추가 주문</legend>
+                <input type="checkbox" id="pickle" name="pickle">
+                <label for="pickle" class="check">피클(800원)</label>
+
+                <input type="checkbox" id="chilli" name="chilli">
+                <label for="chilli" class="check">칠리 소스(300원)</label>
+
+                <input type="checkbox" id="defil" name="defil">
+                <label for="defil" class="check">디필 소스(200원)</label>
+
+                <input type="checkbox" id="cheesestick" name="cheesestick">
+                <label for="cheesestick" class="check">치즈스틱(4개,4800원)</label>
+
+                <input type="checkbox" id="cornsal" name="cornsal">
+                <label for="cornsal" class="check">콘 샐러드(2400원)</label>
+            </fieldset>
+        </form>
+        <form name="sum">
+            <fieldset>
+                <legend>합계</legend>
+                <p><span id="sum"></span></p>
+            </fieldset>
+        </form>
+
+    </div>
+    <script src="문제2.js"></script>
+</body>
+</html>

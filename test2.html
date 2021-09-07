@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+    <h3>onclick연산</h3>
+    
+    <form>
+        <input type="radio" name="major" id="dog" onclick="changepic()" checked>댕댕이
+        <input type="radio" name="major" id="patric" onclick="changepic()">뚱이
+        <input type="radio" name="major" id="worldmap" onclick="changepic()">세계지도
+        <input type="radio" name="major" id="data" onclick="changepic()">코드
+    </form>
+    <img id="here" src="댕됑이.jpg">
+
+    <li>
+        <input type="text" id="textline" name="textline">
+        <label for="textline" class="text">텍스트 라인 입력</label>
+    </li>
+
+
+    <li>
+        <input type="checkbox" id="shippingInfo" name="shippingInfo">
+        <label for="shippingInfo" class="check">주문 정보와 배송 정보가 같습니다.</label>
+    </li>
+
+<script>
+
+    var check=document.querySelector("#shippingInfo");
+    var userId=document.querySelector("#textline");
+
+    userId.onchange=checkId;
+
+    function checkId(){
+        if(userId.value.length<4 || userId.value.length >15){
+            alert("4~15자리의 영문과 숫자를 입력하세요.");
+            userId.select();
+        }
+    }
+
+
+    check.addEventListener("click", function(){
+        if(check.checked==true){
+            alert("체크되었습니다.");
+        }else{
+            alert("다시 체크를 눌러 해제되었씁니다.");
+        }
+        
+    });
+
+    function changepic(){
+        var radio = document.getElementsByName("major")
+        var pic = document.getElementById("here")
+
+        if(radio[0].checked==true){
+            pic.src="댕됑이.jpg";
+        }
+
+        if(radio[1].checked==true){
+            pic.src="뚱이.png";
+        }
+        if(radio[2].checked==true){
+            pic.src="세계지도.png";
+        }
+        if(radio[3].checked==true){
+            pic.src="자료.png";
+        }
+
+    }
+</script>
+</body>
+</html>

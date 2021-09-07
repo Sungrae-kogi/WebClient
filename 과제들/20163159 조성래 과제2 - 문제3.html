@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<div id="container">
+<img id="pic" src="자료.png" alt="">
+</div>
+<script>
+
+pic.addEventListener("mouseover",changePic());
+pic.addEventListener("mouseout",originPic());
+
+function changePic() { 
+pic.src = "세계지도.png";
+}
+function originPic() {
+pic.src = "자료.png";
+}
+</script>
+</body>
+</html>

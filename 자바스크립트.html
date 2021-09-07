@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>외부 파일에 자바스크립트 작성</title>
+    <script src="lib.js">
+    </script>
+</head>
+<body>
+    <h3>지역변수와 전역변수</h3>
+    <hr>
+    <script>
+        var x = 100; // 전역변수
+
+        function f(){
+            var x =1;
+
+            document.write("지역변수 x="+x);
+            document.write("<br>");
+            document.write("전역변수 x="+this.x); //전역변수를 참조할땐 this.
+        }
+        f();
+    </script>
+</body>
+</html>

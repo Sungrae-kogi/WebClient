@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+    <h3>onclick연산</h3>
+    
+    <form>
+        <input type="radio" name="major" id="dog" onclick="changepic()" checked>댕댕이
+        <input type="radio" name="major" id="patric" onclick="changepic()">뚱이
+        <input type="radio" name="major" id="worldmap" onclick="changepic()">세계지도
+        <input type="radio" name="major" id="data" onclick="changepic()">코드
+    </form>
+    <img id="here" src="댕됑이.jpg">
+
+<script>
+
+
+    function changepic(){
+        var radio = document.getElementsByName("major")
+        var pic = document.getElementById("here")
+
+        if(radio[0].checked==true){
+            pic.src="댕됑이.jpg";
+        }
+
+        if(radio[1].checked==true){
+            pic.src="뚱이.png";
+        }
+        if(radio[2].checked==true){
+            pic.src="세계지도.png";
+        }
+        if(radio[3].checked==true){
+            pic.src="자료.png";
+        }
+
+    }
+</script>
+</body>
+</html>

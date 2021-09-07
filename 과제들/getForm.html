@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>수강신청하기</title>
+	<link rel="stylesheet" href="getForm.css">
+</head>
+<body>
+	<div id="container">
+		<h1>수강신청</h1>
+		<form name="testForm">
+			<fieldset>
+				<legend>학생 정보</legend>
+				<ul>
+					<li>       	
+						<label class="reg" for="userName">이름</label>
+						<input type="text" id="userName" name="userName" maxlength="50">               
+					</li>
+					<li>
+						<label class="reg" for="class">학과</label>
+						<select name="major" id="major" onchange="displaySelect()">
+							<option>---- 학과 선택 ----</option>
+							<option value="software">소프트웨어학부</option>
+							<option value="archi">건축공학부</option>
+							<option value="mechanic">기계공학부</option>
+							<option value="elec">전기전자공학부</option>
+						</select>
+					</li>
+				</ul>				
+			</fieldset>
+			<fieldset>
+				<legend>신청 과목</legend>
+				<p>2학기에 신청할 과목을 선택하세요.</p>
+				<label><input type="radio" name="subject" value="webclient">웹클라이언트</label>
+				<label><input type="radio" name="subject" value="os">운영체제</label>
+				<label><input type="radio" name="subject" value="pgm">프로그래밍</label>       
+			</fieldset>
+			<fieldset>
+				<legend>신청 과목</legend>
+				<p>2학기에 신청할 과목을 선택하세요.</p>
+				<label><input type="checkbox" name="subject1" value="webclient">웹클라이언트</label>
+				<label><input type="checkbox" name="subject2" value="os">운영체제</label>
+				<label><input type="checkbox" name="subject3" value="pgm">프로그래밍</label>
+			</fieldset>
+		</form>
+	</div>
+
+	<script src="getForm.js"></script>
+</body>
+</html>

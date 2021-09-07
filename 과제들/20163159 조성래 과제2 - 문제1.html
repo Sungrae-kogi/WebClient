@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>팝업 표시</title>
+    <script>
+        let today = new Date();
+        let hours = today.getHours();
+        var one = (hours>=12? "오후" : "오전");
+        let minutes = today.getMinutes();
+        let seconds = today.getSeconds();
+
+        function newWindow(){
+            
+            var newWindow = window.open("", "foo", "width=200, height=150");
+
+            newWindow.document.write(one+" "+hours+":"+minutes+":"+seconds);
+        }
+    </script>
+
+
+</head>
+<body>
+    <button type="button" onclick="newWindow()">창띄우기</button>
+</body>
+</html>

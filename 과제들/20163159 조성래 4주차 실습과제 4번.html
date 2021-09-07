@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>셀렉터 만들기</title>
+<meta charset="utf-8">
+<style>
+    .main {
+        background-color: rgb(169,250,250);
+        
+    }
+    .headline {
+        text-align: center;
+        font-size: 1.8em;
+        font-family: fantasy;
+        font-weight: bolder
+
+    }
+    .help{
+        color: rgb(200,130,35);
+        
+
+        
+    }
+    .help + .help{
+        color: rgb(255,111,97);
+        font-size:1.5em;
+    }
+    #hot{
+        font-size: 1.2em;
+        color: rgb(153,153,255);
+        background-color: rgb(200, 35, 35);
+    }
+
+</style>
+</head>
+<body class="main">
+    <h3 class="headline">클래스 셀렉터</h3>
+    <hr>
+    <div class="help">도움말</div>
+    <p class="help">!!경고 메시지</p>
+    <p id="hot">뜨거운 태양</p>
+</body>
+</html>

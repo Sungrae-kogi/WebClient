@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+    
+}
+
+body div{
+    width: 800px;
+    height: 500px;
+    margin:0 auto;
+
+    background-color: rgb(215,234,255);
+    
+    border: 1px solid rgb(43,43,43);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 3px;
+    
+}
+
+hr {
+    border: none;
+    border-top: 3px dotted;
+    color: #fff;
+
+}
+p{
+    text-align: center;
+    margin: 0px auto;
+    font-style: Arial, '돋움', dotum, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font: 'Josefin Sans', sans-seif;
+    margin:0px auto;
+    font-size: 78px;
+    
+}
+
+.dotum {
+    font-family: fantasy
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2 {
+    position: relative;
+    
+    top:150px;
+}

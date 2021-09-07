@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>:hover 활용</title>
+<meta charset="utf-8">
+<style>
+    h3{
+        font-size: 1.5em;
+        color: rgb(228, 164, 149);
+    }
+    #test{
+        font-size: 1.2em;
+        display:flex;
+    }
+    #test p{
+        margin-top: 85px;
+        margin-left: 50px;
+        margin-bottom: 80px;
+    }
+    .picture img:last-child{display:none;}
+    .picture:hover img:first-child{display:none;}
+    .picture:hover img:last-child{display:inline-block;}
+
+    
+    </style>
+</head>
+<body>
+    <h3>:hover 활용</h3>
+    <hr>
+    <article id="test">
+        <p>마우스를 올리면 슬프지만 저의 사진이 올라올지도 모릅니다.</p>
+    <figure class="picture">
+        <img src="댕됑이.jpg"/>
+        <img src="20163159 조성래.png"/ style="width:180px">
+    </figure>
+</article>
+
+</body>
+</html>
